@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project: Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Times New Roman", serif;
+      }
+
+      nav {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 50px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 40px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      nav ul li a:hover {
+        color: lightpink;
+      }
+
+      .container {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+      }
+
+      .container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .container img[src="Frame 1.jpg"] {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .container img[src="Frame 1.jpg"]:hover {
+        transform: scale(1.1);
+      }
+
+      .about-me {
+        position: relative;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .about-me img {
+        width: 400px;
+        height: auto;
+        margin-right: 10px;
+      }
+
+      .contact-info {
+        color: white;
+        text-align: center;
+        margin-top: 150px;
+        padding: 20px;
+      }
+
+      .contact-info a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .contact-info a:hover {
+        color: lightpink;
+      }
+
+      .section {
+        display: none;
+        padding: 50px;
+        text-align: center;
+        color: white;
+      }
+
+      .section.active {
+        display: block;
+      }
+
+      .project-links {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .project-links a {
+        display: block;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+
+      .project-links a:hover {
+        color: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- SECTION ORGANIZING -->
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN LANDING PAGE SECTION -->
+    <section id="home" class="section active">
+      <div class="container">
+        <img src="main-portfolio.jpg" alt="MAIN GRAPHIC DESIGN IMAGE">
+      </div>
+      <div class="container">
+        <img src="Frame 1.jpg" alt="Frame 1">
+        <div class="about-me">
+          <img src="about-me.png" alt="ABOUT ME IMAGE">
+          <p><i>Hi, my name is Jasmine Cabrera, a graphics designer and editor with a passion for visuals. I specialize in using Figma, Adobe Illustrator, and Photoshop to bring my creative ideas to life. As the creative director for the University of Waterloo Filipino Student Association, I’ve led design initiatives and built collaborative projects. I’ve also worked alongside a professional design team at Gluckstein Design Company, where I helped refine design concepts and client presentations.</i></p>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <table style="margin: 0 auto; color: white; border-collapse: collapse; font-size: 18px;">
+          <tr>
+            <th colspan="2" style="padding-bottom: 15px; font-size: 24px;"><i>Let's Work Together!</i></th>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td><a href="mailto:j3cabrer@uwaterloo.ca">j3cabrer@uwaterloo.ca</a></td>
+          </tr>
+          <tr>
+            <td>Phone:</td>
+            <td>289-885-2071</td>
+          </tr>
+          <tr>
+            <td>LinkedIn:</td>
+            <td><a href="https://www.linkedin.com/in/jasmineecabrera" target="_blank">linkedin.com/in/jasmineecabrera</a></td>
+          </tr>
+          <tr>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <p style="font-size: 22px;">RE-BRAND IT</p>
+      <div class="container">
+        <img src="Frame 4.jpg" alt="RE BRANDING PROJECT IMAGE">
+        <p><b>Peacher Peacher – Rebranding</b><br>
+          Peacher Peacher is a vibrant, fruit-focused bubble tea brand with a youthful, social media-driven identity. This rebranding project refined its storytelling, packaging, and digital presence to enhance brand recognition and stand out in a competitive market. The updated design strengthens consistency, improves usability, and elevates its appeal to trend-savvy consumers.</p>
+
+        <div class="project-links">
+          <a href="https://youtube.com/shorts/Cj29CAQFa-E" target="_blank"> View Social Video 1</a>
+          <a href="https://youtube.com/shorts/s-2DIzI-bOY" target="_blank"> View Social Video 2</a>
+          <a href="https://youtube.com/shorts/mYj3U-X3jr4" target="_blank"> View Social Video 3</a>
+        </div>
+
+        <br>
+        <p style="font-size: 22px;">WYAWYG?</p>
+        <img src="Frame 7.jpg" alt="ALL ABOUT ME POSTER IMAGE">
+        <p><b>Where are you at? Where do you want to go? –</b> Is a project designed to help me define and develop my unique sense of taste as a designer while using GenAi in design. This project consists of a digital portrait of myself as a designer, showcased in 3-5 graphic designs (ex. Posters). Reflecting my personal style, design philosophy, and goals. I choose to do 3 posters that displays my design style.</p>
+
+        <br>
+        <p style="font-size: 22px;">UNIVERSITY OF WATERLOO'S FILIPINO STUDENT ASSOCIATION 🇵🇭</p>
+        <img src="Frame 10.jpg" alt="PICTURES OF UWFSA">
+        <br>
+        <p><b>PROJECT + STUDENT CLUB UWFSA </b> – The University of Waterloo Filipino Student Association (UWFSA) is a student-led club dedicated to celebrating and promoting Filipino culture within the university community. Their mission is to foster a sense of belonging for Filipino students and allies while educating others about the richness of Filipino heritage, traditions, and experiences.</p>
+        <img src="Frame 11.jpg" alt="UWFSA INSTAGRAM FEED">
+        <p> I am currently Creative Director of FSA, it is my role in shaping our club's visual identity and engagement. I handle designing feed/story posts, ensuring branding consistency and capturing the essence of events, merch/promo materials, strategic aesthetic, managing workload and deadlines. The role takes initiative as well as strong visuals to attract students to join our events and our community. In UWFSA everyone is welcome! ✨🇵🇭 </p>
+        <h3><i><a href="https://www.instagram.com/uw.fsa/" target="_blank">@uw.fsa</a></i></h3>
+
+      </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume" class="section">
+      <div class="contact-info">
+        <div class="resume-container">
+          <p class="resume-link">
+            <a href="https://docs.google.com/document/d/1qEGpfYBEU3RtI6zkUjQHhX2Y8Pv00hgoGdHkTjOJQIY/edit?usp=sharing" target="_blank">View Full Resume Here</a>
+          </p>
+          <img src="main resume.png" alt="Jasmine Cabrera's Resume" class="resume-img">
+        </div>
+        <h1><i>Let's Connect!</i></h1>
+        <p>Email: <a href="mailto:j3cabrer@uwaterloo.ca">j3cabrer@uwaterloo.ca</a></p>
+        <p>Phone: 289-885-2071</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jasmineecabrera" target="_blank">
+            www.linkedin.com/in/jasmineecabrera</a></p>
+      </div>
+    </section>
+
+    <style>
+      .resume-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .resume-link {
+        margin-bottom: 15px;
+      }
+
+      .resume-img {
+        max-width: 70%;
+        height: auto;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+    <!--
+Code copied from: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp  
+Author: W3Schools  
+Name: How TO - Toggle Hide and Show  
+Description: Shows how to toggle visibility of elements using simple JavaScript  
+Date retrieved: Mar 20, 2025  
+-->
+    <script>
+      function showSection(sectionId) {
+        document.querySelectorAll('.section').forEach(section => {
+          section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+      }
+    </script>
+  </body>
+</html>
